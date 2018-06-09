@@ -25,16 +25,21 @@
     </script>
 	<script>
 	$(document).ready(function(){
+//        Evento1
 		$("#AdvGrafico").mouseenter(function(){
 			alert("Esta página contiene gráficas dinámicas, en caso de no visualizarlas habilita los scripts en la barra de navegación");
 		});
-	});
-	
-	$(document).ready(function(){
-		$("button").click(function(){
+//        Evento2        
+        $("#button2").click(function(){
+            $("#div2").fadeToggle("slow");
+        });
+//        Evento3        
+        $("#button1").click(function(){
 			$(".opcional").hide();
 		});
+        
 	});
+	
 	</script>
     <style>
 .dropbtn {
@@ -214,8 +219,13 @@
           </td>
         </tr>
         <tr>
+                    
+        
           <td style="width: 284.217px;">
-            <div style="text-align: center;">
+              
+              
+              
+            <div style="text-align: center">
               <pre><b><span style="font-family: Century Gothic;">Revive el segundo debate <br>presidencial aquí:</span></b><br><br><iframe
 
 src="https://www.youtube.com/embed/CYpIhHV9y4Y?rel=0&amp;start=600" allow="autoplay; encrypted-media"
@@ -223,16 +233,24 @@ src="https://www.youtube.com/embed/CYpIhHV9y4Y?rel=0&amp;start=600" allow="autop
 allowfullscreen="" frameborder="0"></iframe>
 <div class="video" style="text-align: center;">            </div></pre>
             </div>
-            <div style="text-align: center;"><br>
-              <pre><b><span style="font-family: Century Gothic;">Recordamos el primer debate:<br><br></span></b><iframe
+          
+              <div style="text-align: center">
+              <button id="button2">Primer debate</button>
+          </div>
+            
+            <div  id= "div2" style="text-align: center;display:none"><br>
+            <pre><b><span style="font-family: Century Gothic;">Recordamos el primer debate:<br><br></span></b><iframe
 
-src="https://www.youtube.com/embed/adrQcRwqwwk?rel=0&amp;start=525" allow="autoplay; encrypted-media"
+            src="https://www.youtube.com/embed/adrQcRwqwwk?rel=0&amp;start=525" allow="autoplay; encrypted-media"
 
-allowfullscreen="" frameborder="0"></iframe>
-</pre> </div>
+            allowfullscreen="" frameborder="0"></iframe>
+            </pre> </div>
+           
+            
           </td>
+        
           <td style="width: 474.017px; text-align: justify;" class="opcional">
-			<div align="center"><button>Ocultar mensaje de la junta Directiva</button></div>
+			<div align="center"><button id="button1">Ocultar mensaje de la junta Directiva</button></div>
             <div style="margin-left: 40px;"><span style="color: #666666;"><strong><span
 
                     style="font-family: Century Gothic;"><br>
